@@ -154,7 +154,7 @@ section h2::after{
 .apropos p {
 margin-bottom: 2rem;
 color: var(--gris-fonce);
-font-size: 1.2rem;
+font-size: 1.3rem ;
 }
 
 .competence table{
@@ -190,7 +190,7 @@ font-size: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
-.competence table tbody tr:hover¨{
+.competence table tbody tr:hover{
     background-color: #F0F0F0;
 }
 
@@ -205,7 +205,7 @@ footer{
     text-align: center;
 }
 
-footer{
+footer p {
     color: white;
     margin-bottom: 1.2rem;
 }
@@ -220,5 +220,5 @@ footer a {
 
 footer a:hover {
     color: var(--Orange-vif);
-    transform:  translateY(-3px);
+    transform: translateY(-3px);
 }
