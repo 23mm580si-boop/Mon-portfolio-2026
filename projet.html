@@ -1,153 +1,124 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <LInk rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>mon portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div>
-            <a href="">Mon portfolio</a>
+            <a href="">mon portfolio</a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projet.html"class="passion">Projet</a></li>
-                <li><a href="passion.html">Passion</a></li>
+                <li><a href="projets.html"class="active">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
                 <li><a href="divertissement.html">Divertissement</a></li>
-                <li><a href="contact.html">Contanct</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section class="section">
-        <h1>Mes Réalisation</h1>
-        <div class="line"></div>
-
-        <div class="grid">
-            <!-- CARD 1 -->
+<main>
+        <section class="projets">
+        <h1>Mes Réalisations</h1>
+        <div class="cards">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4">
-                <div class="card-content">
-                    <h3>Site E-commerce</h3>
-                    <p>Une boutique en ligne complete développé avec HTML, CSS  et javascript pur</p>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                    </div>
-                </div>
-                <div class="cad-footer">
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
-                </div>
+           <img src="image/Site E-commenrce.jpg" alt="E-commerce.webp" width="300">
+          <h3>Site E-commerce</h3>
+          <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+          <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
+          </div>
+          <div class="link">
+            <a href="#"><i class="fab fa-github -code"></i> Code</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+          </div>
+        </div>
+        <div class="card">
+            <img src="image/Gestionnaire de Taches.jpg" alt="gestion de taches.webp" width="300">
+            <h3>Gestionnaire de taches</h3>
+            <p>Application Web pour organiser ses projets quotidiens avec stockage local</p>
+            <div class="tags">
+            <span>Python</span>
+            <span>Flask</span>
             </div>
-            <!-- CARD 2 -->>
-             <div class="card">
-                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a">
-                <div class="card-content">
-                    <h3>Gestionaire de Tache</h3>
-                    <p>Application web pour organiser ses projet quotidiens avec stockage local</p>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Flask</span>
-                    </div>
-                </div>
-                <div class="cad-footer">
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
-                </div>
-             </div>
-             <!-- CARD 3 -->>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-                <div class="card-content">
-                    <h3>Blog personnel</h3>
-                    <p>projet en cours de migration vers laravel pour apprendre le backend</p>
-                    <div class="tags">
-                        <span>PHP</span>
-                        <SPan>laravel</SPan>
-                    </div>
-                </div>
-                <div class="cad-footer">
-                    <a href="#">Code</a>
-                    <a href="#">Bientot</a>
-                </div>
+            <div class="link">
+                <a href="#"><i class="fab fa-github -code"></i>Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i>Démo</a>
             </div>
-            <!-- CARD 4 -->
-             <div class="card">
-                <img src="https://images.unsplash.com/photo-151288049-bebda4e38f71">
-                <div class="card-content">
-                    <h3> Dashboard d'analyse</h3>
-                    <p>visualisation de données dynamique avec python et Matplotlib</p>
-                    <div class="tags">
-                        <span>Python </span>
-                        <span>Data</span>
-                    </div>
-
-                </div>
-                <div class="cad-footer">
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
-                </div>
-             </div>
-
-            <!-- CARD 5 -->>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723c961d3e">
-                <div class="card-content">
-                    <h3>Application Metéo</h3>
-
-                    <p>une Application utilisaant un API en temps réel pour afficher la météo modiale</p>
-                    <div class=" tags">
-                        <span>javascript</span>
-                        <span>API</span>
-
-                    </div>
-                </div>
-                <div class="cad-footer">
-                    <a href="#">code</a>
-                    <a href="#">Démo</a>
-                </div>
+        </div> 
+        <div class="card">
+            <img src="image/bloc-personnel;.jpg" alt="blog personnel.webp" width="300">
+            <h3>Blog personnel</h3>
+            <p>Projet en cours de migration vers Laravel pour apprendre le backend</p>
+            <div class="tags">
+            <span>PHP</span>
+            <span>Laravel</span>
             </div>
-
-
-            <!-- CARD 6 -->>
-            <div>
-                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698">
-                <div class="card-content">
-                    <h3>Maqutte Mobile UI</h3>
-                    <p>Conception d'une interface utilisateur moderne pour une application de fitness</p>
-                    <div class="tags">
-                        <span>Fagma</span>
-                        <span>Design</span>
-                    </div>
-                </div>
-                <div class="cad-footer"> 
-                    <a href="#">Design</a>
-                    <a href="#">Apperçu</a>
-                </div>
+        <div class="link">
+            <a href="#"><i class="fab fa-github -code"></i>Code</a>
+            <a href="#"><i class="fa fa-clock"></i>Bientot</a>
+        </div>
+        </div>
+        <div class="card">
+            <img src="image/Deshboard d'Analyse.jpg" alt="dashboard.webp" width="300">
+            <h3>dashboard d'Analyse</h3>
+            <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotib.</p>
+            <div class="tags">
+            <span>Python</span>
+            <span>Data</span>
+            </div>
+        <div class="link">
+            <a href="#"><i class="fab fa-github -code"></i>Code</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i>Démo</a>
+        </div>
+        </div>
+        <div class="card">
+            <img src="image/Applicatiom Meteo.jpg" alt="meteo.webp" width="300">
+            <h3>Application météo</h3>
+            <p>Une application utilisant une API en temps réel pour afficher la météo mondiale</p>
+            <div class="tags">
+            <span>JavaScript</span>
+            <span>API</span>
+            </div>
+            <div class="link">
+                <a href="#"><i class="fab fa-github -code"></i>Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i>Démo</a>
             </div>
         </div>
-    </section>
-        
-    
-     
-        <footer>
-            <p>&copy; 2026 Petros. Tous droits réservés.</p>
-            <div class="social">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <div class="card">
+            <img src="image/Maquete mobile.jpg" alt="maquette.webp" width="300">
+            <H3>Maquette Mobile UI</H3>
+            <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
+            <div class="tags">
+            <span>Figma</span>
+            <span>Design</span>
             </div>
-        </footer>
-    </main>
-    <footer></footer>
+            <div class="link">
+                <a href="#"><i class="fab fa-figma -code"></i>Design</a>
+                <a href="#"><i class="fa fa-eye"></i>Aperçu</a>
+            </div>
+        </div>
+        </div>
+        </section>
+     </main>
+<footer>
+
+<p>© 2026 petros. Tous droits réservés.</p>
+<p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+</p>
+</footer>
 </body>
 </html>
+</main>
